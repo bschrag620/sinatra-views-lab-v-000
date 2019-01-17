@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<%=require 'date'%>
 <html>
   <head>Homepage</head>
   <body>
     <h1>Today</h1>
     <%=now = DateTime.now%>
-    <p>The date is <%=now.day%>, <%=now.month%> <%=now.date</p>
+    <p>now.strftime("The day is %A, %B %d, %Y")</p>
   </body>
 </html>
